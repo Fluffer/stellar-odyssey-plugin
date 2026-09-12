@@ -170,7 +170,10 @@ overlay never calls the game's API.
   keeps growing across expeditions until you reset it.
 - **Fuel.** Current fuel, the average fuel one of your jumps costs this session (before
   any jump: the nearest unexplored cell's cost), and how many such jumps are left. Below
-  two jumps the line turns amber and the alert button turns amber on every page.
+  two jumps the line turns amber and the alert button turns amber on every page. The
+  cost uses your fuel-efficiency bonus, which the map page exposes; it is remembered so
+  that jumps observed while another page is open are costed the same way, and a move
+  seen before it was ever read is left out of the average rather than charged in full.
 - **Discoveries.** A thin green ring around every system you discovered yourself and a
   light-blue ring around systems discovered by a squadron mate (from the member list
   in the game's user state). The hover tag says "discovered by you" or names the

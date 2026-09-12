@@ -42,6 +42,33 @@ test("voyager summary: nothing queued gives null", () => {
   assert.equal(g.voyager(), null);
 });
 
+test("fuel per jump uses the remembered efficiency off the map page, and skips moves before it is known", () => {
+  const { store: dom } = (() => { const d = installDom("#/pets"); return { store: d.store }; })();
+  const fx = Object.assign({}, fixture, { voyager: fixture.voyager });
+  const base = storesFor(fx);
+  const ex = base("ExploreStore").$state;
+  ex.currentSystem = { coordinate_x: 2290, coordinate_y: 4786 };
+  const g = installGalaxyInfo(ctxFor(fx, { getStoreById: base, getStore: () => base("ExploreStore") }));
+  // efficiency never read yet: a move is not charged at all
+  g.tick(ex);
+  ex.currentSystem = { coordinate_x: 2291, coordinate_y: 4786 };
+  g.tick(ex);
+  assert.equal(g.session().moves, 0);
+  assert.equal(g.session().fuelSpent, 0);
+  // the map page once stored the efficiency (45.7375%): a 10 ly hop costs 5.43
+  dom["test.fuelEff"] = "45.7375";
+  const g2 = installGalaxyInfo(ctxFor(fx, { getStoreById: base, getStore: () => base("ExploreStore") }));
+  g2.tick(ex);
+  ex.currentSystem = { coordinate_x: 2292, coordinate_y: 4786 };
+  g2.tick(ex);
+  ex.currentSystem = { coordinate_x: 2293, coordinate_y: 4786 };
+  g2.tick(ex);
+  const s = g2.session();
+  assert.equal(s.moves, 2);
+  assert.equal(Math.round(s.fuelSpent * 1000) / 1000, 10.853);            // 2 × 5.42625
+  assert.equal(Math.round((s.fuelSpent / s.moves) * 100) / 100, 5.43);
+});
+
 test("session records each reached waypoint once, and picks up later ones", () => {
   const { g, store } = galaxyWith(fixture.voyagerRunning);
   g.trackVoyager();
