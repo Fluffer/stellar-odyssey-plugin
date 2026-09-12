@@ -40,6 +40,7 @@ function storesFor(fx) {
     GatherStore: Object.assign({ gathering_level: fx.levels && fx.levels.gathering }, fx.gather),
     ExploreStore: { exploring_level: fx.levels && fx.levels.exploring },
     CraftStore: fx.craft, Voyager: fx.voyager,
+    CatalystStore: { catalysts: fx.catalysts || [] },
   };
   return (id) => (map[id] ? { $state: map[id] } : null);
 }

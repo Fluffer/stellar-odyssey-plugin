@@ -87,6 +87,24 @@
       {"_id": "BP2", "quantity": 2, "item": {"_id": "I2", "name": "Create Normal shield blueprint", "rarity": "normal", "currency_use": [], "material_use": [{"material": "ectoplasm", "amount": 10}], "scraps_use": 5}}
     ]
   },
+  "catalysts": [
+    {"_id": "C1", "stat": "defense", "category": "battling", "rarity": "rare", "range": 90, "activity": "default"},
+    {"_id": "C2", "stat": "defense", "category": "battling", "rarity": "rare", "range": 88, "activity": "default"},
+    {"_id": "C3", "stat": "defense", "category": "battling", "rarity": "rare", "range": 85, "activity": "default"},
+    {"_id": "C4", "stat": "defense", "category": "battling", "rarity": "rare", "range": 84, "activity": "default"},
+    {"_id": "C5", "stat": "defense", "category": "battling", "rarity": "rare", "range": 80, "activity": "default"},
+    {"_id": "C6", "stat": "defense", "category": "battling", "rarity": "rare", "range": 40, "activity": "default"},
+    {"_id": "C7", "stat": "fuel_efficiency", "category": "utility", "rarity": "normal", "range": 20, "activity": "default"},
+    {"_id": "C8", "stat": "fuel_efficiency", "category": "utility", "rarity": "normal", "range": 22, "activity": "default"},
+    {"_id": "C9", "stat": "fuel_efficiency", "category": "utility", "rarity": "normal", "range": 25, "activity": "default"},
+    {"_id": "C10", "stat": "fuel_efficiency", "category": "utility", "rarity": "normal", "range": 27, "activity": "default"},
+    {"_id": "C11", "stat": "fuel_efficiency", "category": "utility", "rarity": "normal", "range": 30, "activity": "default"},
+    {"_id": "C12", "stat": "precision", "category": "battling", "rarity": "epic", "range": 95, "activity": "default", "onMarket": true},
+    {"_id": "C13", "stat": "precision", "category": "battling", "rarity": "epic", "range": 95, "activity": "default"},
+    {"_id": "C14", "stat": "precision", "category": "battling", "rarity": "epic", "range": 95, "activity": "default"},
+    {"_id": "C15", "stat": "precision", "category": "battling", "rarity": "epic", "range": 95, "activity": "default"},
+    {"_id": "C16", "stat": "precision", "category": "battling", "rarity": "epic", "range": 95, "activity": "default"}
+  ],
   "voyager": {"current_fuel": 5.5125, "max_fuel": 114, "max_jumps": 3, "timer": 1156, "reward_bonus": 20, "planning": [], "queue": []},
   "voyagerRunning": {"current_fuel": 105.72, "max_fuel": 122, "max_jumps": 3, "timer": 1156, "reward_bonus": 88, "planning": [], "queue": [
     {"_id": "W1", "destination_x": 2271, "destination_y": 4782, "destination_z": 1, "distance": 10, "eta": 1789195796404, "status": "reached", "cosmic_dust_reward": 30561, "cosmic_dust_reward_taxed": 10187, "start": 1789195796404},

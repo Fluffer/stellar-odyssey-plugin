@@ -272,6 +272,13 @@ without touching its layout:
 - **Crafting.** How many blueprints you could craft right now with what you hold, the
   materials that block the most blueprints with where they farm (NPC and body type
   from the advisor's drop table), and for the selected blueprint what is missing.
+  Below that, **recommended merges**: the advisor's merge planner (`lib/merge-math.js`)
+  run on your spare catalysts, listing per stat the 5-pack to merge (ranges), the
+  resulting rarity and range, the success chance, the quantum-core cost, whether
+  paying to protect the inputs pays off, and the chain's goal. Only merges that stay
+  on the perfect-legendary path are suggested; catalysts on the market or locked are
+  skipped. The advisor's pull-from-gear merges are not included, since they need the
+  full gear analysis.
 - **Voyager.** The fuel tank (amber under 20%), the jump limit, the real time per jump
   (the store's `timer` is a reduction off a 30-minute base, exactly as the page
   computes it), the reward bonus with your tech skill, and the planned expedition's

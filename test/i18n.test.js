@@ -31,7 +31,8 @@ function usedKeys() {
 
 // Keys the code passes through t() from data rather than literals: POI
 // labels, slot and skill names on the player panel.
-const DYNAMIC_KEYS = ["habitable", "portal", "dungeon", "starter", "weapon", "shield", "engine", "sensors", "laser", "probes", "battling", "gathering", "exploring"];
+const DYNAMIC_KEYS = ["habitable", "portal", "dungeon", "starter", "weapon", "shield", "engine", "sensors", "laser", "probes", "battling", "gathering", "exploring",
+  "normal", "uncommon", "rare", "unique", "epic", "legendary"];
 
 test("every string the overlays render has a Chinese translation", () => {
   const used = usedKeys();
