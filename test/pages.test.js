@@ -98,7 +98,7 @@ test("pets overlay: model, card lines and panel from the captured state", () => 
   assert.match(dragonLine.innerHTML, /\+1 boost saves <b>5h<\/b> · 7\.5M each/);
   const owlLine = dom.owlCard.children.find(c => c.className === "soPetInfo");
   assert.ok(owlLine, "store card gets a line");
-  assert.match(owlLine.innerHTML, /if equipped: <b>\d+ XP\/h<\/b>/);
+  assert.match(owlLine.innerHTML, /if equipped: <b>\d+<\/b> XP\/h/);
   const panel = dom.body.children.find(c => c.id === "soPetsPanel");
   assert.ok(panel && panel.style.display === "block");
   assert.match(panel.innerHTML, /Pet food<\/b> 1\.9K · burn 17\.5\/day → <b>108 days<\/b>/);

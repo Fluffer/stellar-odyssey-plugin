@@ -46,6 +46,19 @@ That is all. Nothing runs outside the browser.
 Every panel can be dragged; positions and switches are remembered in the browser.
 Details of each feature are further down in this file.
 
+### Language: English or 简体中文
+
+A small button sits to the left of the alert pill: **中文** switches every overlay to
+Simplified Chinese, **EN** switches back. The choice is remembered. A browser whose
+language is Chinese starts in Chinese. The game's own terms (跃迁舱, 宇宙尘, 量子核心,
+信用点, 机器人, 克隆体, 中队 ...) follow the game's zh-CN wording, the same choice the
+advisor makes. Numbers, coordinates, compass directions and system, pet, skill and
+material names stay as the game shows them.
+
+To add another language, add a catalogue object to `lib/i18n.js` next to `SO_ZH` and
+extend `langs` in `createI18n`; the test suite checks that every rendered string has a
+translation and that no entry is stale.
+
 ### Updating
 
 Download the new ZIP, replace the files in the same folder, then on `edge://extensions`
@@ -404,6 +417,8 @@ missed, only the latest due stage fires: no catch-up bursts.
 | `lib/page-pets.js` | The pets-page overlay: per-card time-to-level and boost advice, pet-food panel |
 | `lib/page-lab.js` | The laboratory-page overlay: queue health and the warp-capsule chain plan |
 | `lib/page-more.js` | The battling, gathering, crafting, voyager, player and tech panels |
+| `lib/i18n.js` | Overlay strings: English keys, Simplified Chinese catalogue, and the lookup runtime with the language switch |
+| `test/i18n.test.js` | Every rendered string has a translation, no stale entries, placeholders match, the runtime switches and remembers |
 | `test/more-pages.test.js`, `test/helpers/dom-stub.js` | Those six panels against the captured state; the shared DOM stand-in |
 | `lib/pet-math.js`, `lib/lab-math.js` | The advisor's shared pet and laboratory math, copied from `../advisor/public/`; keep in sync |
 | `test/pages.test.js`, `test/fixtures/game-state.json` | Pets and lab overlays run against a captured game state with a minimal DOM stand-in |
