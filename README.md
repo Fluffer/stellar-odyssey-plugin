@@ -266,9 +266,12 @@ without touching its layout:
 - **Crafting.** How many blueprints you could craft right now with what you hold, the
   materials that block the most blueprints with where they farm (NPC and body type
   from the advisor's drop table), and for the selected blueprint what is missing.
-- **Voyager.** Fuel against the fuel one jump needs, jumps of fuel left, time per
-  jump, the reward bonus with your tech skill, and the planned or queued expedition's
-  jumps, time and fuel.
+- **Voyager.** The fuel tank (amber under 20%), the jump limit, the real time per jump
+  (the store's `timer` is a reduction off a 30-minute base, exactly as the page
+  computes it), the reward bonus with your tech skill, and the planned expedition's
+  jumps, distance and time, or the running one's pending jumps and ETA. Fuel per jump
+  is charged by the server and the client holds no formula for it, so the panel never
+  guesses a fuel cost.
 - **Player.** Sits bottom-left by default, clear of the item cards. For each ship item:
   level, rarity, value against the craft-time value cap,
   its mods, how many levels behind the matching skill it is with the cap a recraft would

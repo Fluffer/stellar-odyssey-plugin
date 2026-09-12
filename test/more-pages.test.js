@@ -67,8 +67,10 @@ test("crafting panel: craftable count, blockers with farm spots, selected bluepr
 
 test("voyager panel: fuel per jump and idle state", () => {
   const { html } = panelOn("#/voyager", "soVoyagerPanel");
-  // store timer 1156 is the reduction off a 30-minute base: 1800 - 1156 = 644 s, the page's "10m 44s"
-  assert.match(html, /fuel <b style='color:#ffab40'>5\.5 \/ 114<\/b> · ~0 of 3 jumps of fuel · 10m per jump · reward bonus \+20% \(tech \+19%\)/);
+  // store timer 1156 is the reduction off a 30-minute base: 1800 - 1156 = 644 s, the page's "10m 44s";
+  // fuel per jump is charged server-side, so the panel reports the tank and never guesses a cost
+  assert.match(html, /fuel <b style='color:#ffab40'>5\.5 \/ 114<\/b> · max 3 jumps · 10m per jump · reward bonus \+20% \(tech \+19%\)/);
+  assert.doesNotMatch(html, /jumps of fuel/);
   assert.match(html, /No expedition planned/);
 });
 
