@@ -162,6 +162,12 @@ overlay never calls the game's API.
   and per jump, and exploring XP. Stored in the page's localStorage so it survives
   reloads; **reset** starts a fresh session. A jump that happened before the session
   started is not counted.
+- **Voyager expedition.** While a voyager is out, a line shows waypoints reached, the
+  cosmic dust collected (gross, with the net after squadron tax), the exploring XP it
+  earns and the XP per jump, and the ETA of the last waypoint. XP is what the game's
+  own Voyager page prints: gross dust ÷ 20 per waypoint. Every reached waypoint is also
+  recorded once into the session line as voyager jumps, XP and dust, so the tally
+  keeps growing across expeditions until you reset it.
 - **Fuel.** Current fuel, the average fuel one of your jumps costs this session (before
   any jump: the nearest unexplored cell's cost), and how many such jumps are left. Below
   two jumps the line turns amber and the alert button turns amber on every page.

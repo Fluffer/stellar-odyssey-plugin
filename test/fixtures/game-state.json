@@ -88,5 +88,10 @@
     ]
   },
   "voyager": {"current_fuel": 5.5125, "max_fuel": 114, "max_jumps": 3, "timer": 1156, "reward_bonus": 20, "planning": [], "queue": []},
+  "voyagerRunning": {"current_fuel": 105.72, "max_fuel": 122, "max_jumps": 3, "timer": 1156, "reward_bonus": 88, "planning": [], "queue": [
+    {"_id": "W1", "destination_x": 2271, "destination_y": 4782, "destination_z": 1, "distance": 10, "eta": 1789195796404, "status": "reached", "cosmic_dust_reward": 30561, "cosmic_dust_reward_taxed": 10187, "start": 1789195796404},
+    {"_id": "W2", "destination_x": 2271, "destination_y": 4781, "destination_z": 1, "distance": 10, "eta": 1789196440402, "status": "reached", "cosmic_dust_reward": 30496, "cosmic_dust_reward_taxed": 10165, "start": 1789195796404},
+    {"_id": "W3", "destination_x": 2271, "destination_y": 4780, "destination_z": 1, "distance": 10, "eta": 1789197084400, "status": "pending", "cosmic_dust_reward": 0, "cosmic_dust_reward_taxed": 0, "start": 1789195796404}
+  ]},
   "now": 1789190650048
 }
