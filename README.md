@@ -424,8 +424,12 @@ node --test
 
 Uses only `node:test`, no dependencies.
 
+## License
+
+MIT, see `LICENSE`.
+
 ## Disclaimer
 
 Unofficial fan tool, not affiliated with or endorsed by the developer of Stellar
-Odyssey. It only reads one timer in the game's page state, plays sounds and adds a
-button; use at your own risk.
+Odyssey. It only reads the game's page state, plays sounds and draws its own panels;
+use at your own risk.
