@@ -1,0 +1,92 @@
+{
+  "lab": {
+    "buildings": [
+      {"_id": "B0", "building": "Foundry", "level": 30, "currency_use": ["gold", "silver", "copper", "platinum"], "material_use": [], "produce": ["ingots"], "input": 10000, "output": 1, "timer": 45},
+      {"_id": "B1", "building": "Refinery", "level": 30, "currency_use": ["diamond", "ruby", "emerald", "sapphire"], "material_use": [], "produce": ["refined_crystals"], "input": 10000, "output": 1, "timer": 45},
+      {"_id": "B2", "building": "Crystal Synthesis Lab", "level": 30, "currency_use": ["water", "nitrogen", "sulfur", "carbon"], "material_use": [], "produce": ["high_end_crystals"], "input": 10000, "output": 1, "timer": 45},
+      {"_id": "B3", "building": "Noble Gas Processing Station", "level": 30, "currency_use": ["helium", "methane"], "material_use": [], "produce": ["propulsors"], "input": 10000, "output": 1, "timer": 45},
+      {"_id": "B4", "building": "Nanotech Complex", "level": 30, "currency_use": ["ammonia", "hydrogen"], "material_use": [], "produce": ["nanoconductors"], "input": 10000, "output": 1, "timer": 45},
+      {"_id": "B5", "building": "Circuit Integration Facility", "level": 80, "currency_use": ["silicon", "cobalt"], "material_use": [], "produce": ["microcircuits"], "input": 1000, "output": 1, "timer": 30},
+      {"_id": "B6", "building": "Energetic Fusion Center", "level": 80, "currency_use": ["argon", "dark matter"], "material_use": [], "produce": ["fusion cells"], "input": 1000, "output": 1, "timer": 30},
+      {"_id": "B7", "building": "Module Assembly Plant", "level": 30, "currency_use": [], "material_use": ["ingots", "refined crystals", "microcircuits"], "produce": ["fuel cell casing"], "input": 20, "output": 1, "timer": 30},
+      {"_id": "B8", "building": "Fuel Lab", "level": 30, "currency_use": [], "material_use": ["high end crystals", "propulsors", "nanoconductors", "fusion cells"], "produce": ["unstable fuel"], "input": 20, "output": 1, "timer": 30},
+      {"_id": "B9", "building": "Space Capsule Complex", "level": 30, "currency_use": [], "material_use": ["unstable fuel", "fuel cell casing"], "produce": ["warp capsule"], "input": 10, "output": 1, "timer": 30}
+    ],
+    "labQueue": [
+      {"building": "B6", "timer": 22, "total": 1000, "done": 0, "claimed": 0, "lastClaimDate": 1789186100941, "startDate": 1789186100941, "endDate": 1789208100941, "multiplier": 1},
+      {"building": "B5", "timer": 22, "total": 1000, "done": 0, "claimed": 0, "lastClaimDate": 1789186109709, "startDate": 1789186109709, "endDate": 1789208109709, "multiplier": 1}
+    ]
+  },
+  "currency": {"ammonia": 63088605, "argon": 321581, "carbon": 69642151, "cobalt": 8849159, "copper": 130676176, "cosmic_dust": 130980459, "credits": 6215926934, "dark_matter": 512894.5, "diamond": 2279413482, "emerald": 2184929969, "gold": 134566239, "helium": 85875938, "hydrogen": 91783380, "methane": 158566801, "nitrogen": 117542166, "platinum": 115429341, "ruby": 2285601164, "sapphire": 2224487285, "silicon": 196420, "silver": 120112430, "sulfur": 138531661, "water": 99269135, "stellar_tokens": 0, "quantum_cores": 149, "catalyst_parts": 458},
+  "materials": [
+    {"item": {"name": "ingots"}, "quantity": 7000}, {"item": {"name": "refined crystals"}, "quantity": 7000}, {"item": {"name": "high end crystals"}, "quantity": 7000},
+    {"item": {"name": "nanoconductors"}, "quantity": 7000}, {"item": {"name": "propulsors"}, "quantity": 7000}, {"item": {"name": "microcircuits"}, "quantity": 18000},
+    {"item": {"name": "fusion cells"}, "quantity": 18000}, {"item": {"name": "frost shard"}, "quantity": 7}, {"item": {"name": "cog"}, "quantity": 1351},
+    {"item": {"name": "flame"}, "quantity": 5393}, {"item": {"name": "metal scrap"}, "quantity": 134097}, {"item": {"name": "horn"}, "quantity": 1770},
+    {"item": {"name": "slime"}, "quantity": 2538}, {"item": {"name": "condensed sand"}, "quantity": 3493}, {"item": {"name": "warp capsule"}, "quantity": 56},
+    {"item": {"name": "bones"}, "quantity": 6718}, {"item": {"name": "pet food"}, "quantity": 1895}, {"item": {"name": "ectoplasm"}, "quantity": 7}
+  ],
+  "pets": {
+    "pets": [
+      {"_id": "P0", "name": "Darnex", "level": 15, "current_xp": 2136, "xpboost": 3, "food": 85, "pet_type": "generator"},
+      {"_id": "P1", "name": "Dragon", "level": 14, "current_xp": 2590, "xpboost": 1, "food": 85, "pet_type": "booster"},
+      {"_id": "P2", "name": "Korin", "level": 16, "current_xp": 40, "xpboost": 4, "food": 55, "pet_type": "generator"},
+      {"_id": "P3", "name": "Cat", "level": 12, "current_xp": 1054, "xpboost": 3, "food": 65, "pet_type": "booster"},
+      {"_id": "P4", "name": "Owl", "level": 15, "current_xp": 1509, "xpboost": 5, "food": 85, "pet_type": "booster"},
+      {"_id": "P5", "name": "Drone", "level": 14, "current_xp": 2695, "xpboost": 2, "food": 55, "pet_type": "qol"},
+      {"_id": "P6", "name": "Quadruped", "level": 14, "current_xp": 2349, "xpboost": 2, "food": 50, "pet_type": "qol"},
+      {"_id": "P7", "name": "Selyn", "level": 10, "current_xp": 232, "xpboost": 2, "food": 85, "pet_type": "generator"},
+      {"_id": "P8", "name": "Roller", "level": 4, "current_xp": 209, "xpboost": 0, "food": 50, "pet_type": "qol"},
+      {"_id": "P9", "name": "Humanoid", "level": 9, "current_xp": 275, "xpboost": 1, "food": 50, "pet_type": "qol"},
+      {"_id": "P10", "name": "Velari", "level": 4, "current_xp": 215, "xpboost": 0, "food": 95, "pet_type": "generator"},
+      {"_id": "P11", "name": "Dog", "level": 14, "current_xp": 660, "xpboost": 3, "food": 60, "pet_type": "booster"}
+    ],
+    "petSlots": [
+      {"pet": "P1", "autofeed": true, "autofeed_limit": 50}, {"pet": "P11", "autofeed": true, "autofeed_limit": 50},
+      {"pet": "P5", "autofeed": true, "autofeed_limit": 50}, {"pet": "P6", "autofeed": true, "autofeed_limit": 50},
+      {"pet": "P0", "autofeed": true, "autofeed_limit": 50}, {"pet": "P2", "autofeed": true, "autofeed_limit": 50},
+      {"pet": "P4", "autofeed": true, "autofeed_limit": 50}, {"pet": "P9", "autofeed": true, "autofeed_limit": 50}
+    ]
+  },
+  "user": {
+    "additionalQueueSlots": 4,
+    "player": {
+      "skills": {"battling_weapon_boost": 73, "battling_hull_boost": 50, "battling_precision_boost": 64, "battling_evasion_boost": 58, "battling_base_xp_boost": 50, "gathering_base_xp_boost": 60, "gathering_rare_base_drop": 100, "gathering_common_base_drop": 100, "exploring_cosmic_dust_boost": 100, "crafting_base_xp_boost": 48, "pets_base_xp_boost": 100, "base_module_efficiency_boost": 0, "voyager_reward_boost": 19, "dungeon_battle_boost": 0, "dungeon_gather_boost": 0, "dungeon_craft_boost": 0, "dungeon_explore_boost": 0, "dungeon_reward_boost": 0, "gb_damage_boost": 40, "gb_defense_boost": 40, "gb_reward_boost": 40},
+      "droids": [
+        {"name": "Droid 1", "efficiency": 35, "storage": 35, "maneuverability": 35}, {"name": "Droid 2", "efficiency": 35, "storage": 35, "maneuverability": 35},
+        {"name": "Droid 3", "efficiency": 35, "storage": 35, "maneuverability": 35}, {"name": "Droid 4", "efficiency": 35, "storage": 35, "maneuverability": 35},
+        {"name": "Droid 5", "efficiency": 35, "storage": 35, "maneuverability": 35}, {"name": "Droid 6", "efficiency": 35, "storage": 35, "maneuverability": 35},
+        {"name": "Droid 7", "efficiency": 35, "storage": 35, "maneuverability": 35}
+      ]
+    }
+  },
+  "premium": {"active": true},
+  "ship": {
+    "weapon_slot": {"name": "Legendary Weapon", "type": "weapon", "level": 95, "rarity": "legendary", "value": 3553, "bonuses": ["electromagnetic"]},
+    "shield_slot": {"name": "Legendary Shield", "type": "shield", "level": 95, "rarity": "legendary", "value": 3530, "bonuses": ["electromagnetic"]},
+    "engine_slot": {"name": "Legendary Engine", "type": "engine", "level": 66, "rarity": "legendary", "value": 2175, "bonuses": ["Scan reward boost"]},
+    "sensors_slot": {"name": "Legendary Sensors", "type": "sensors", "level": 66, "rarity": "legendary", "value": 2226, "bonuses": ["Scan reward boost"]},
+    "laser_slot": {"name": "Legendary Laser", "type": "laser", "level": 91, "rarity": "legendary", "value": 3433, "bonuses": ["Droids dodge chance"]},
+    "probes_slot": {"name": "Legendary Probes", "type": "probes", "level": 91, "rarity": "legendary", "value": 3294, "bonuses": ["Droids dodge chance"]}
+  },
+  "levels": {"battling": 96, "gathering": 92, "exploring": 67, "crafting": 65},
+  "battle": {
+    "isBattling": true, "currentNPC": "dusters", "currentNPCLevel": 703, "nextActionAt": 1789191414308, "offlineActionsExpiresAt": 1789450553,
+    "lastReward": {"name": "credits", "amount": 398581, "xp": 340, "simulation": {"win": "player", "mob": {"damage": 4166, "precision": 703, "evasion": 703, "hitChance": 46, "dodgeChance": 44, "alive": false, "maxHull": 1760330, "level": 703}, "clones": [{"name": "Clone 1", "damage": 17880, "hp": 4833, "maxHp": 9538}, {"name": "Clone 2", "damage": 17880, "hp": 9538, "maxHp": 9538}]}}
+  },
+  "gather": {
+    "isGathering": true, "nextActionAt": 1789191443660, "offlineActionsExpiresAt": 1789450553,
+    "currentGatheringBody": {"type": "Comet", "nodeType": "crystal", "nodeQuality": 100, "hasNodes": true},
+    "lastReward": {"name": "diamond", "amount": 1149687, "xp": 120, "statistics": [{"alive": true, "ore": 164241, "name": "Droid 1"}, {"alive": true, "ore": 164241, "name": "Droid 2"}, {"alive": true, "ore": 164241, "name": "Droid 3"}, {"alive": true, "ore": 164241, "name": "Droid 4"}, {"alive": true, "ore": 164241, "name": "Droid 5"}, {"alive": true, "ore": 164241, "name": "Droid 6"}, {"alive": false, "ore": 0, "name": "Droid 7"}]}
+  },
+  "craft": {
+    "isCrafting": false, "crafting_level": 65, "selectedBlueprint": "BP1",
+    "blueprints": [
+      {"_id": "BP0", "quantity": 1, "item": {"_id": "I0", "name": "Create Rare probes blueprint", "rarity": "rare", "currency_use": [{"normalCurrency": "carbon", "amount": 10184}], "material_use": [{"material": "flame", "amount": 51}], "scraps_use": 51}},
+      {"_id": "BP1", "quantity": 1, "item": {"_id": "I1", "name": "Create Epic weapon blueprint", "rarity": "epic", "currency_use": [{"normalCurrency": "gold", "amount": 50000}], "material_use": [{"material": "ectoplasm", "amount": 40}, {"material": "frost shard", "amount": 20}], "scraps_use": 100}},
+      {"_id": "BP2", "quantity": 2, "item": {"_id": "I2", "name": "Create Normal shield blueprint", "rarity": "normal", "currency_use": [], "material_use": [{"material": "ectoplasm", "amount": 10}], "scraps_use": 5}}
+    ]
+  },
+  "voyager": {"current_fuel": 5.5125, "max_fuel": 114, "max_jumps": 3, "timer": 900, "reward_bonus": 20, "planning": [], "queue": []},
+  "now": 1789190650048
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Stellar Odyssey Engine Alert",
+  "version": "1.2.0",
+  "description": "Sound alert 10 s before the engine cooldown reaches 0, escalating every 5 s once the engine is ready. On/off button in the game.",
+  "content_scripts": [
+    {
+      "matches": ["https://steam.stellarodyssey.app/*", "https://*.stellarodyssey.app/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "stellar-odyssey-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "In-game plugin for Stellar Odyssey: escalating sound alert as the engine cooldown runs out. Installs itself into the running game over the Chrome DevTools Protocol.",
+  "type": "commonjs",
+  "main": "plugin.js",
+  "scripts": {
+    "start": "node plugin.js",
+    "test": "node --test",
+    "build-extension": "node build-extension.js",
+    "test-sound": "node plugin.js --test-sound",
+    "status": "node plugin.js --status",
+    "stop": "node plugin.js --stop"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
